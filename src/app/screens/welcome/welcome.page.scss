@@ -1,0 +1,28 @@
+.welpage {
+  text-align: center;
+  margin-top: 10%;
+  padding: 5%;
+}
+
+.headline {
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.subline {
+  margin-bottom: 10%;
+}
+ion-button {
+  --background: #fbde3f;
+}
+
+.lastrow {
+  margin-top: 10%;
+  p {
+    font-size: medium;
+  }
+  span {
+    font-size: large;
+    font-weight: 700;
+  }
+}

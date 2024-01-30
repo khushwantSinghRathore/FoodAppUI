@@ -1,13 +1,45 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>welcome</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">welcome</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid class="welpage">
+    <ion-row>
+      <ion-col>
+        <img src="assets/Group 7.png" />
+      </ion-col>
+    </ion-row>
+    <ion-row class="headline">
+      <ion-col>
+        <p>Welcome to Super Foodo</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="subline">
+      <ion-col>
+        <p>Lorem ipsum dolor sit amet consectetur. Ut cras pellentesque</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" shape="round" size="large" (click)="signup()"
+          >Create account</ion-button
+        >
+      </ion-col>
+      <ion-col size="12">
+        <ion-button
+          expand="block"
+          shape="round"
+          size="large"
+          fill="outline"
+          color="dark"
+          (click)="signin()"
+          >Login</ion-button
+        >
+      </ion-col>
+    </ion-row>
+    <ion-row class="lastrow">
+      <ion-col>
+        <p>
+          By <span>Registering</span> or <span>Login</span> you have agreed to
+          these <span>Terms and Conditions.</span>
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
