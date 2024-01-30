@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-resetpass',
@@ -6,10 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resetpass.page.scss'],
 })
 export class ResetpassPage implements OnInit {
+  issubmit = false;
+  constructor(private router: Router) {}
 
-  constructor() { }
-
-  ngOnInit() {
+  ionViewDidEnter() {
+    this.issubmit = false;
   }
 
+  ngOnInit() {}
+
+  login() {}
+
+  resetpass() {
+    this.issubmit = true;
+  }
+
+  continue() {
+    this.router.navigateByUrl('/sigin');
+  }
 }
