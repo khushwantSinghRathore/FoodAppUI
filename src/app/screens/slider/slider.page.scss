@@ -1,0 +1,24 @@
+.slides {
+  text-align: center;
+  margin-top: 15%;
+}
+
+.headline {
+  font-size: xx-large;
+  margin-top: 15%;
+  font-weight: 700;
+}
+
+.subline {
+  margin-bottom: 10%;
+}
+
+swiper-container {
+  --swiper-pagination-bullet-inactive-color: #ffe7ad;
+
+  --swiper-pagination-color: #fbde3f;
+}
+
+ion-fab-button {
+  --background: #fbde3f;
+}

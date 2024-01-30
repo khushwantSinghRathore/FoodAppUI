@@ -1,13 +1,31 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>slider</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">slider</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <swiper-container slides-per-view="1" speed="500" pagination="true">
+    <swiper-slide *ngFor="let item of arr; let i = index">
+      <ion-grid class="slides">
+        <ion-row>
+          <ion-col>
+            <img [src]="item.img" />
+          </ion-col>
+        </ion-row>
+        <ion-row class="headline">
+          <ion-col>
+            <p>{{item.head}}</p>
+          </ion-col>
+        </ion-row>
+        <ion-row class="subline">
+          <ion-col>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Ut cras pellentesque diam
+              mauris laoreet donec a eget aliquam.
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </swiper-slide>
+  </swiper-container>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button (click)="takeMe()">
+      <ion-icon name="arrow-forward"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
