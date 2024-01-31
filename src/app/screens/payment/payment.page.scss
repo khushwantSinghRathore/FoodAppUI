@@ -1,0 +1,28 @@
+ion-button {
+  --background: #fbde3f;
+  --color: black;
+}
+
+.bottombtn {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+}
+
+.headline {
+  font-size: xx-large;
+  font-weight: 900;
+  margin-left: 5%;
+}
+
+.subline {
+  font-size: large;
+  margin-left: 5%;
+  font-weight: 550;
+}
+
+ion-label {
+  ion-icon {
+    margin-right: 5%;
+  }
+}

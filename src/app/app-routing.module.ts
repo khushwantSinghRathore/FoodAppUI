@@ -63,6 +63,22 @@ const routes: Routes = [
     path: 'address',
     loadChildren: () => import('./screens/address/address.module').then( m => m.AddressPageModule)
   },
+  {
+    path: 'payment',
+    loadChildren: () => import('./screens/payment/payment.module').then( m => m.PaymentPageModule)
+  },
+  {
+    path: 'checkout',
+    loadChildren: () => import('./screens/checkout/checkout.module').then( m => m.CheckoutPageModule)
+  },
+  {
+    path: 'map',
+    loadChildren: () => import('./screens/map/map.module').then( m => m.MapPageModule)
+  },
+  {
+    path: 'card',
+    loadChildren: () => import('./screens/card/card.module').then( m => m.CardPageModule)
+  },
 ];
 
 @NgModule({
