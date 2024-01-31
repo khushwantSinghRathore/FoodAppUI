@@ -1,0 +1,35 @@
+.headline {
+  text-align: center;
+  font-size: x-large;
+  font-weight: 550;
+}
+
+.items {
+  p {
+    font-size: large;
+  }
+}
+
+ion-item {
+  --background: #d9d9d9;
+  --color: #000000;
+
+  --border-width: 0px;
+
+  --border-radius: 12px;
+
+  --detail-icon-color: #000000;
+  --detail-icon-opacity: 1;
+  --detail-icon-font-size: 20px;
+}
+
+ion-button {
+  --background: #fbde3f;
+  --color: black;
+}
+
+.bottombtn {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+}
