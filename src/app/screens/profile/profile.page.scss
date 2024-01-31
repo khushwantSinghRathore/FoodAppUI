@@ -1,0 +1,26 @@
+ion-item {
+  margin-top: 5%;
+}
+
+ion-item::part(native) {
+  border-radius: 20px;
+}
+
+.headline {
+  font-size: x-large;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+ion-button {
+  --background: #fbde3f;
+  --color: black;
+}
+
+.bottombtn {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+}

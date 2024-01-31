@@ -1,0 +1,40 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button fill="clear" color="dark">
+          <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="headline"> <p>Addresses</p> </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col offset=".5" size="11">
+        <ion-list>
+          <ion-item fill="outline" lines="none">
+            <ion-input placeholder="Address"></ion-input>
+          </ion-item>
+          <ion-item fill="outline" lines="none">
+            <ion-input placeholder="City"></ion-input>
+          </ion-item>
+          <ion-item fill="outline" lines="none">
+            <ion-input placeholder="Town"></ion-input>
+          </ion-item>
+          <ion-item fill="outline" lines="none">
+            <ion-input placeholder="Street"></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row class="bottombtn">
+      <ion-col offset=".5" size="11">
+        <ion-button expand="block" shape="round" size="large" (click)="save()"
+          >Save</ion-button
+        ></ion-col
+      >
+    </ion-row>
+  </ion-grid>
+</ion-content>

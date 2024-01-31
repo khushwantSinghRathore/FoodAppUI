@@ -55,6 +55,14 @@ const routes: Routes = [
         (m) => m.ResetpassPageModule
       ),
   },
+  {
+    path: 'profile',
+    loadChildren: () => import('./screens/profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'address',
+    loadChildren: () => import('./screens/address/address.module').then( m => m.AddressPageModule)
+  },
 ];
 
 @NgModule({
