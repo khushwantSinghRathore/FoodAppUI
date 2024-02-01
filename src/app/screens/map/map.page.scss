@@ -1,0 +1,83 @@
+ion-content {
+  --background: url("../../../assets/zzz 1.png");
+}
+
+.upcard {
+  background: #2c2739;
+  border-radius: 39px;
+
+  ion-grid {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .onlyicon {
+    color: gold;
+    font-size: x-large;
+    -ms-transform: translateY(25%);
+    transform: translateY(25%);
+  }
+
+  .fstrow {
+    padding: 5% 2%;
+  }
+}
+
+.name {
+  font-size: large;
+
+  p {
+    margin: 0px;
+    margin-top: 5px;
+    color: white;
+    font-weight: 700;
+  }
+
+  ion-icon {
+    color: gold;
+  }
+}
+
+.rowbottom {
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+}
+
+.seccard {
+  background: white;
+  padding: 5%;
+  border-radius: 39px;
+
+  text-align: center;
+
+  ion-icon {
+    font-size: x-large;
+    background: gold;
+    border-radius: 50%;
+    padding: 20%;
+  }
+
+  .text {
+    text-align: justify;
+    color: black;
+
+    .headline {
+      font-weight: 700;
+      font-size: larger;
+      color: black;
+    }
+
+    .subline {
+      margin-top: 2%;
+      font-size: larger;
+      span {
+        color: red;
+      }
+    }
+
+    p {
+      margin: 0px;
+    }
+  }
+}

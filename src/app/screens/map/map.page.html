@@ -1,13 +1,85 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>map</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">map</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button fill="clear" color="dark">
+          <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col style="text-align: end">
+        <ion-button fill="clear" color="dark">
+          <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col offset="2">
+        <img src="assets/yyy@1 1.png" style="height: 60px; width: 80px" />
+      </ion-col>
+    </ion-row>
+    <ion-row class="rowbottom">
+      <ion-col size="12">
+        <ion-card class="upcard">
+          <ion-grid>
+            <ion-row class="fstrow">
+              <ion-col>
+                <ion-avatar>
+                  <img src="assets/handsome-attractive-young-man.png" />
+                </ion-avatar>
+              </ion-col>
+              <ion-col size="3" class="name">
+                <p>Jason</p>
+                <p><ion-icon name="star"></ion-icon> 4.8</p>
+              </ion-col>
+
+              <ion-col size="3"></ion-col>
+              <ion-col class="onlyicon">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+              </ion-col>
+              <ion-col class="onlyicon">
+                <ion-icon name="call"></ion-icon>
+              </ion-col>
+            </ion-row>
+            <ion-row class="seccard">
+              <ion-col size="3">
+                <ion-icon name="timer-outline"></ion-icon>
+              </ion-col>
+              <ion-col size="9" class="text">
+                <p class="headline">Delivery Time 12:46</p>
+                <p class="subline">Distance from you: <span>300m</span></p>
+              </ion-col>
+              <ion-col size="3"></ion-col>
+              <ion-col size="9" class="text">
+                <p>Catering</p>
+              </ion-col>
+              <ion-col size="3"></ion-col>
+              <ion-col size="9" class="text">
+                <p>Order placed</p>
+              </ion-col>
+              <ion-col size="11" offset="0.5">
+                <hr height="4px" color="black" />
+              </ion-col>
+              <ion-col size="3">
+                <ion-icon name="location-outline"></ion-icon>
+              </ion-col>
+              <ion-col size="9" class="text">
+                <p class="headline">McDonald’s</p>
+              </ion-col>
+              <ion-col size="3"></ion-col>
+              <ion-col size="2">
+                <img src="assets/yyy@1 1.png" />
+              </ion-col>
+              <ion-col size="5" class="text">
+                <p>McDouble</p>
+                <p>x1</p>
+              </ion-col>
+              <ion-col class="text">
+                <p class="headline">$20</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
