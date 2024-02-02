@@ -1,0 +1,40 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button fill="clear" color="dark">
+          <ion-icon name="arrow-back-outline" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="title">
+        <p>Featured on Super Foodoo</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" *ngFor="let item of itemoffer">
+        <ion-card class="card">
+          <ion-row class="offer">
+            <ion-col size="10">
+              <p>{{item.offr}}</p>
+            </ion-col>
+            <ion-col size="2" class="favicon">
+              <ion-icon name="heart-outline"></ion-icon
+            ></ion-col>
+          </ion-row>
+          <img src="{{item.img}}" />
+          <ion-row>
+            <ion-col size="9">
+              <p class="headline">{{item.titl}}</p>
+              <p class="subline">{{item.dis}}</p>
+            </ion-col>
+            <ion-col size="3" class="rating">
+              <p>{{item.str}}</p>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

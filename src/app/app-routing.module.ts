@@ -83,6 +83,14 @@ const routes: Routes = [
     path: 'hotspots',
     loadChildren: () => import('./hotspots/hotspots.module').then( m => m.HotspotsPageModule)
   },
+  {
+    path: 'featured',
+    loadChildren: () => import('./featured/featured.module').then( m => m.FeaturedPageModule)
+  },
+  {
+    path: 'favorites',
+    loadChildren: () => import('./favorites/favorites.module').then( m => m.FavoritesPageModule)
+  },
 ];
 
 @NgModule({
