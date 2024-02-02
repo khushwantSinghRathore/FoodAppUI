@@ -4,6 +4,10 @@
   font-weight: 700;
 }
 
+ion-card {
+  box-shadow: none;
+}
+
 .card {
   img {
     width: 100%;
@@ -44,7 +48,7 @@
 
   .rating {
     font-size: large;
-    text-align: -webkit-center;
+    text-align: -webkit-right;
 
     p {
       background: #eaeaea;

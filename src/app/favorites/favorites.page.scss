@@ -1,0 +1,66 @@
+.title {
+  text-align: center;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.rowone {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+ion-card {
+  box-shadow: none;
+}
+
+.card {
+  img {
+    width: 100%;
+  }
+
+  .offer {
+    width: 100%;
+    position: absolute;
+    top: 5%;
+
+    p {
+      background: gold;
+      width: fit-content;
+      padding: 5px;
+      padding-right: 10px;
+      border-radius: 0px 12px 12px 0px;
+      transform: translateX(-5px);
+      color: black;
+    }
+  }
+
+  .favicon {
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+  }
+
+  .headline {
+    font-size: x-large;
+    font-weight: 700;
+    color: black;
+    margin: 0px;
+  }
+  .subline {
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+
+  .rating {
+    font-size: large;
+    text-align: -webkit-right;
+
+    p {
+      background: #eaeaea;
+      padding: 10%;
+      border-radius: 50%;
+      width: fit-content;
+      margin: 0px;
+      color: black;
+    }
+  }
+}
