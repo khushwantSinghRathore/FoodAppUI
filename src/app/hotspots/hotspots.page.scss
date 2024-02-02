@@ -1,0 +1,45 @@
+ion-content {
+  --background: #dbdbdb;
+}
+
+ion-item {
+  --background: #e5e5e5;
+  --color: #000000;
+
+  --border-width: 0px;
+
+  --border-radius: 24px;
+
+  --detail-icon-color: #000000;
+  --detail-icon-opacity: 1;
+  --detail-icon-font-size: 20px;
+
+  margin-bottom: 10%;
+}
+
+.headline {
+  text-align: center;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.divcard {
+  div {
+    background: white;
+    border-radius: 12px;
+    text-align: center;
+    height: 80%;
+  }
+
+  img {
+    transform: translateY(-37%);
+    height: 50%;
+  }
+
+  p {
+    transform: translateY(-100%);
+  }
+  span {
+    color: gold;
+  }
+}

@@ -51,6 +51,6 @@ export class HomePage {
   }
 
   openhotsports() {
-    this.router.navigateByUrl('/hotsports');
+    this.router.navigateByUrl('/hotspots');
   }
 }
