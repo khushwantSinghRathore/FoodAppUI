@@ -79,6 +79,10 @@ const routes: Routes = [
     path: 'card',
     loadChildren: () => import('./screens/card/card.module').then( m => m.CardPageModule)
   },
+  {
+    path: 'hotspots',
+    loadChildren: () => import('./hotspots/hotspots.module').then( m => m.HotspotsPageModule)
+  },
 ];
 
 @NgModule({

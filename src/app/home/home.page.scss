@@ -1,27 +1,161 @@
-#container {
+ion-content {
+  --background: #eaeaea;
+}
+
+.topline {
+  margin-left: 2%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  p {
+    margin: 0%;
+  }
+
+  .addr {
+    margin-top: 2%;
+    font-weight: 550;
+
+    ion-icon {
+      vertical-align: bottom;
+    }
+  }
+}
+
+.icontoggle {
+  background: #f3f3f3;
+  padding: 0%;
+  border-radius: 30px;
+  width: 63%;
+  margin: auto;
+  margin-top: 5%;
+
+  .black {
+    background: black;
+    color: white;
+    padding: 12%;
+    border-radius: 50%;
+    margin-right: 5%;
+  }
+
+  .grey {
+    background: #f3f3f3;
+    padding: 12%;
+    border-radius: 50%;
+    margin-right: 5%;
+  }
+}
+
+ion-item {
+  --background: #e5e5e5;
+  --color: #000000;
+
+  --border-width: 0px;
+
+  --border-radius: 24px;
+
+  --detail-icon-color: #000000;
+  --detail-icon-opacity: 1;
+  --detail-icon-font-size: 20px;
+}
+
+.hscroll {
+  overflow: auto;
+  white-space: nowrap;
   text-align: center;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  div {
+    margin-top: 5%;
+    display: inline-block;
+    width: 27%;
+
+    img {
+      width: 80px;
+      height: 65px;
+      background: white;
+      border-radius: 12px;
+    }
+  }
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.hscroll::-webkit-scrollbar {
+  display: none;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+.hscroll {
+  .cardad {
+    width: 70%;
+    margin-right: 5%;
+    img {
+      width: 100%;
+      height: 142px;
+    }
 
-  color: #8c8c8c;
+    .title {
+      text-align: start;
+      font-size: large;
+      font-weight: 550;
+      margin: 0px;
+    }
 
-  margin: 0;
+    .subtitle {
+      text-align: start;
+      display: inline-block;
+    }
+  }
+  .fav {
+    position: relative;
+    width: inherit;
+    color: white;
+    text-align: start;
+    font-size: x-large;
+    transform: translateY(-225px) translateX(50px);
+  }
+
+  .offer {
+    position: relative;
+    width: inherit;
+    background: gold;
+    font-size: small;
+    padding: 5px;
+    transform: translateY(-220px);
+    border-radius: 0px 12px 12px 0px;
+    p {
+      margin: 0px;
+    }
+  }
+
+  .rating {
+    width: inherit;
+    p {
+      background: #eaeaea;
+    }
+  }
+}
+.title {
+  font-size: large;
+  font-weight: 550;
+  transform: translateY(10px);
+
+  p {
+    margin: 0px;
+  }
 }
 
-#container a {
-  text-decoration: none;
+.divcard {
+  div {
+    background: white;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 20%;
+  }
+
+  img {
+    transform: translateY(-37%);
+  }
+
+  p {
+    transform: translateY(-100%);
+  }
+  span {
+    color: gold;
+  }
 }

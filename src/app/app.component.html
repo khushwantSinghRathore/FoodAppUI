@@ -1,3 +1,43 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu menuId="profile-menu" contentId="main-content">
+    <ion-content>
+      <ion-grid>
+        <ion-row class="upperrow">
+          <ion-col size="12">
+            <ion-avatar>
+              <img src="assets/handsome-attractive-young-man.png" />
+            </ion-avatar>
+          </ion-col>
+          <ion-col size="12">
+            <p>Jason Norm</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-list>
+              <ion-item *ngFor="let item of itemlist" lines="none">
+                <ion-icon
+                  name="{{ item.icon }}"
+                  slot="start"
+                  color="warning"
+                ></ion-icon>
+                <p>{{ item.dis }}</p>
+              </ion-item>
+            </ion-list>
+            <hr height="2px" color="black" />
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-list>
+              <ion-item *ngFor="let item of opt" lines="none">
+                <p>{{ item.name }}</p>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main-content"></ion-router-outlet>
 </ion-app>

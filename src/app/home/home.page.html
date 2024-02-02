@@ -1,20 +1,83 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid>
+    <ion-row class="topline">
+      <ion-col size="4">
+        <p>Deliver now</p>
+        <p class="addr">Madni Town <ion-icon name="chevron-down"></ion-icon></p>
+      </ion-col>
+      <ion-col size="4"></ion-col>
+      <ion-col>
+        <div class="icontoggle">
+          <ion-icon name="briefcase" class="black"></ion-icon>
+          <ion-icon name="man" class="grey"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col offset="0.5" size="11">
+        <ion-item lines="none">
+          <ion-icon name="search" slot="start"></ion-icon>
+          <ion-input placeholder="Search Super Foodoo"> </ion-input>
+          <ion-icon name="options" slot="end" (click)="openMenu()"></ion-icon>
+        </ion-item>
+      </ion-col>
+    </ion-row>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-row>
+      <ion-col>
+        <div class="hscroll">
+          <div *ngFor="let item of itemMenu">
+            <img src="{{item.img}}" />
+            <p>{{item.dis}}</p>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col offset="0.5" class="title"
+        ><p>Featured on Super Foodoo</p>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button color="light" shape="round" size="block">
+          <ion-icon name="arrow-forward" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col offset=".5">
+        <div class="hscroll">
+          <div class="cardad" *ngFor="let item of itemoffer">
+            <img src="{{item.img}}" />
+            <p class="title">{{item.titl}}</p>
+            <p class="subtitle">{{item.dis}}</p>
+            <p class="rating">4.5</p>
+            <div class="offer">
+              <p>{{item.offr}}</p>
+            </div>
+            <div class="fav">
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col offset="0.5" class="title"><p>Hot spots</p></ion-col>
+      <ion-col size="3">
+        <ion-button color="light" shape="round" size="block">
+          <ion-icon name="arrow-forward" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col offset="0.5" *ngFor="let item of menuItem" class="divcard">
+        <div>
+          <img src="{{item.img}}" />
+          <p>{{item.dis}}</p>
+          <p><span>$</span> {{item.rate}}</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
