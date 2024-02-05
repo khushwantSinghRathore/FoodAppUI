@@ -57,39 +57,60 @@ const routes: Routes = [
   },
   {
     path: 'profile',
-    loadChildren: () => import('./screens/profile/profile.module').then( m => m.ProfilePageModule)
+    loadChildren: () =>
+      import('./screens/profile/profile.module').then(
+        (m) => m.ProfilePageModule
+      ),
   },
   {
     path: 'address',
-    loadChildren: () => import('./screens/address/address.module').then( m => m.AddressPageModule)
+    loadChildren: () =>
+      import('./screens/address/address.module').then(
+        (m) => m.AddressPageModule
+      ),
   },
   {
     path: 'payment',
-    loadChildren: () => import('./screens/payment/payment.module').then( m => m.PaymentPageModule)
+    loadChildren: () =>
+      import('./screens/payment/payment.module').then(
+        (m) => m.PaymentPageModule
+      ),
   },
   {
     path: 'checkout',
-    loadChildren: () => import('./screens/checkout/checkout.module').then( m => m.CheckoutPageModule)
+    loadChildren: () =>
+      import('./screens/checkout/checkout.module').then(
+        (m) => m.CheckoutPageModule
+      ),
   },
   {
     path: 'map',
-    loadChildren: () => import('./screens/map/map.module').then( m => m.MapPageModule)
+    loadChildren: () =>
+      import('./screens/map/map.module').then((m) => m.MapPageModule),
   },
   {
     path: 'card',
-    loadChildren: () => import('./screens/card/card.module').then( m => m.CardPageModule)
+    loadChildren: () =>
+      import('./screens/card/card.module').then((m) => m.CardPageModule),
   },
   {
     path: 'hotspots',
-    loadChildren: () => import('./hotspots/hotspots.module').then( m => m.HotspotsPageModule)
+    loadChildren: () =>
+      import('./hotspots/hotspots.module').then((m) => m.HotspotsPageModule),
   },
   {
     path: 'featured',
-    loadChildren: () => import('./featured/featured.module').then( m => m.FeaturedPageModule)
+    loadChildren: () =>
+      import('./featured/featured.module').then((m) => m.FeaturedPageModule),
   },
   {
     path: 'favorites',
-    loadChildren: () => import('./favorites/favorites.module').then( m => m.FavoritesPageModule)
+    loadChildren: () =>
+      import('./favorites/favorites.module').then((m) => m.FavoritesPageModule),
+  },
+  {
+    path: 'cart',
+    loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
   },
 ];
 
