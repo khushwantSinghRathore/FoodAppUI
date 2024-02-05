@@ -1,13 +1,71 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>checkout</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">checkout</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="3" offset="0.5" style="font-size: x-large; margin-top: 10%"
+        ><ion-icon name="close"></ion-icon
+      ></ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col offset="0.5" class="title">
+        <p>McDonald’s(Best Offer)</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col offset="1" size="8" class="t1">
+        <p>Mc Double</p>
+      </ion-col>
+      <ion-col> <img src="assets/yyy@1 1.png" /> </ion-col>
+    </ion-row>
+    <ion-row class="price">
+      <ion-col size="4" offset="1">
+        <ion-row class="btnround">
+          <ion-col> <ion-icon name="trash"></ion-icon></ion-col>
+          <ion-col> <p>1</p></ion-col>
+          <ion-col><ion-icon name="add"></ion-icon></ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col> <p>$20.99</p> </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col offset="0.5" size="11">
+        <hr height="2px" color="grey" />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col offset="0.5" size="11">
+        <ion-card class="card">
+          <ion-row>
+            <ion-col size="10">
+              <p class="t1">5 pc. Chicken McNuggets</p>
+              <p class="t2">Add 1 for free with $10 purchase</p>
+            </ion-col>
+            <ion-col class="icon">
+              <ion-icon name="add"></ion-icon>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col offset="1" class="r1">
+        <p>Subtotal</p>
+      </ion-col>
+      <ion-col class="l1">
+        <p>$20.99</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="bottombtn">
+      <ion-col offset="0.5" size="11">
+        <ion-button shape="round" expand="block" size="large"
+          >Go to checkout
+        </ion-button>
+      </ion-col>
+      <ion-col offset="0.5" size="11">
+        <ion-button shape="round" expand="block" size="large"
+          >Add items
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

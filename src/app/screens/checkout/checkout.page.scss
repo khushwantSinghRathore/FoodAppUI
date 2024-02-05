@@ -1,0 +1,91 @@
+.title {
+  font-size: x-large;
+  font-weight: 700;
+  padding-left: 5%;
+}
+
+img {
+  width: 70px;
+  height: 60px;
+  margin: auto;
+}
+
+.btnround {
+  background: #fbde3f;
+  border-radius: 24px;
+  text-align: center;
+  padding: 0% 5%;
+
+  p {
+    margin: 0px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    padding: 5%;
+  }
+}
+
+.price {
+  text-align: end;
+  margin-right: 10%;
+}
+
+.t1 {
+  font-size: large;
+  font-weight: 550;
+}
+
+ion-button {
+  --background: #fbde3f;
+  --color: black;
+}
+
+.bottombtn {
+  width: 100%;
+  position: absolute;
+  bottom: 2%;
+}
+
+ion-card {
+  margin: 0px;
+  padding: 5% 2%;
+  border-radius: 12px;
+}
+
+.card {
+  margin-bottom: 10%;
+  p {
+    margin: 0px;
+  }
+  .t2 {
+    margin-top: 5px;
+    color: #ffd800;
+    font-size: large;
+  }
+
+  .icon {
+    text-align: center;
+
+    ion-icon {
+      background: #ffd800;
+      font-size: x-large;
+      border-radius: 50%;
+      color: black;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      right: 10%;
+    }
+  }
+}
+
+.r1 {
+  font-size: larger;
+}
+
+.l1 {
+  font-size: larger;
+  text-align: end;
+  margin-right: 5%;
+}
