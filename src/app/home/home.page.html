@@ -43,7 +43,7 @@
         </ion-button>
       </ion-col>
     </ion-row>
-    <ion-row>
+    <!-- <ion-row>
       <ion-col offset=".5">
         <div class="hscroll">
           <div class="cardad" *ngFor="let item of itemoffer">
@@ -59,6 +59,31 @@
             </div>
           </div>
         </div>
+      </ion-col>
+    </ion-row> -->
+
+    <ion-row>
+      <ion-col class="check">
+        <ion-card class="card" *ngFor="let item of itemoffer">
+          <ion-row class="offer">
+            <ion-col size="10">
+              <p>{{item.offr}}</p>
+            </ion-col>
+            <ion-col size="2" class="favicon">
+              <ion-icon name="heart-outline"></ion-icon
+            ></ion-col>
+          </ion-row>
+          <img src="{{item.img}}" />
+          <ion-row>
+            <ion-col size="9">
+              <p class="headline">{{item.titl}}</p>
+              <p class="subline">{{item.dis}}</p>
+            </ion-col>
+            <ion-col size="3" class="rating">
+              <p>{{item.str}}</p>
+            </ion-col>
+          </ion-row>
+        </ion-card>
       </ion-col>
     </ion-row>
 
